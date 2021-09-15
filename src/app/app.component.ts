@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Heroe } from './shared/interfaces/heroe.interface';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'TallerAngular';
+
 }

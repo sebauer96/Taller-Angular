@@ -1,0 +1,9 @@
+<div class="card" *ngIf="_heroe">
+  <h4>{{_heroe.name}}</h4>
+  <p>{{_heroe.description | superpoder:_heroe.superpoder}}</p>
+  <img [src]="_heroe.img" alt="" srcset="">
+  <p appHighlight [colorText]="'white'">Número de votos: {{_heroe.votes}}</p>
+  <input type="text" (input)="changeName($event)">
+  <button (click)="addVote(_heroe)">Votar</button>
+  <button [routerLink]="'create/' +heroe.id">Ver Heroe</button>
+</div>

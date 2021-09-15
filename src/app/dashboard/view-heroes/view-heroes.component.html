@@ -1,0 +1,19 @@
+<div class="container">
+  <app-heroe *ngFor="let heroe of heroes" [heroe]="heroe" (newVote)="newVote($event)"></app-heroe>
+</div>
+
+<div class="container-button">
+
+  <h2>Cantidad de votos: {{totalVotes}}</h2>
+  <button (click)="reroll()">Re-roll Superheroes</button>
+
+  <button [routerLink]="'create'">Crear heroe</button>
+
+</div>
+
+
+<ul>
+  <li *ngFor="let p of listPokemones">{{p.name}}</li>
+</ul>
+
+
